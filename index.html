@@ -1,0 +1,108 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Banking Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="#Home" id="logo" class="logo">SRJ BANKING</a>
+        <div id="toggle"></div>
+        <ul>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#Services">Services</a></li>
+            <li><a href="#Features">Features</a></li>
+            <li><a href="#About">About</a></li>
+
+        </ul>
+    </header>
+    <section class="banner" id="Home">
+        <div class="textbox">
+            <h2>Welcome to<br> <span>SRJ Credit Management 🙏🏻</span> </h2><br>
+            <h3>Simplicity and Privacy at it best.</h3> <br>
+            <a href="#About" class="btn">About Us</a>
+        </div>
+    </section>
+    
+    
+    
+    <section class="Services" id="Services">
+        <div class="heading">
+            <h2 style="text-align: center;" >Services </h2><hr><br>
+        </div>
+        <div class="content">
+            <div class="contentbox w50">
+                <ul>
+                    <li><a href=""> Users</a><br><p>| View all the Users in the System</p></li><br>
+                    <li><a href="">Credit Transactions</a><br><p>| Transfer credits between multiple users</p></li><br>
+                    <li><a href="">Transactions history</a><br><p>| Veiw all the credit transaction history</p></li>
+                </ul>
+                
+            </div>
+            <!-- <div class="w50">
+                    <img src="" alt="">
+                </div> -->
+        </div>
+    </section>
+    <section class="Features" id="Features">
+        <div class="heading">
+            <h3 >Features</h3> <br> <hr>
+            <br>
+        </div>
+        <div class="content">
+            <div class="card">
+                <div class="face1">
+                    <h4 >Simple & Reliable UI</h4>
+                    <p>Very Simple and minilistic UI for hassle free usage.
+                        minilistic and Light UI for smooth user experience </p>
+                </div>
+                <div class="face2">
+                    <h4>Privacy & Security</h4>
+                    <p>Users Privacy is our Policy. Do transaction or any task with our Services without any worry.</p>
+                </div>
+                <div class="face3">
+                    <h4>Data & Working</h4>
+                    <p>New Enhanced system for fast Credit transactions & other Services. User's Data is stored in safely</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="About" id="About">
+        <div class="heading">
+            <h2 style="    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 49px;" >ABOUT US:</h2> <br>
+        </div>
+        <div class="content">
+            <div class="info">
+                <h3>SRJ BANKING:</h4>
+                <h4>Basic Credit Management System |</h5> <br>
+                <h5>| Created by-</h6> <span><a style="text-decoration: none;  color: rgb(255, 255, 255);" href="https://www.instagram.com/suraj.xdd">Suraj Gaud</a> |</span>
+                <h6>I'm a web developer and design intern at The Spark Foundation</h6> <br> <br>
+                <p>Simple Dynamic Website for Basic Credit Management System. Credit Transfer between multiple users.
+                It has a dummy Data of 10 Users currently in the system.</p> <br> <br> 
+                <p class="social">
+
+                       | For More info: Check us out on social media platforms. |
+                </p>
+
+            </div>
+            
+        </div>
+    </section>
+    <footer id="footer">
+        COPYRIGHT &copy; 2020 SRJ BANKING  |    All Rights Reserved. <br>
+        SRJ BANKING Created by <span id="copyr"><a style="text-decoration: none; color: white;    font-family: 'Times New Roman', Times, serif;" href="">Suraj Gaud</a></span> Powered by THE SPARKS FOUNDATION
+    </footer>
+    
+        
+
+    <script>
+        window.addEventListener('scroll', function () {
+            var header = document.querySelector('header');
+            header.classList.toggle('sticky', window.scrollY > 0)
+        });
+
+    </script>
+</body>
+</html>
